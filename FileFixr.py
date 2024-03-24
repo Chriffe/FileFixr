@@ -113,7 +113,7 @@ def rename_entities_in_directory(directory, include_subdirs, dry_run, log_filena
                     progress_var.set(progress_var.get() + progress_step)
 
     progress_var.set(100)  # Complete the progress bar
-    status_label.config(text="Inaktiv")
+    status_label.config(text="Inactiv")
 
     # Log changes if any
     if change_list:
@@ -146,7 +146,7 @@ def run(include_subdirs, dry_run, progress_var, status_label):
         return
     log_filename = generate_log_filename(log_dir, "dry_run_rename" if dry_run else "renamed_files_directories")
     if dry_run:
-        status_label.config(text="Söker...")
+        status_label.config(text="Searching...")
         start_thread(source_dir, include_subdirs.get(), log_dir, dry_run, progress_var, status_label)
     else:
         confirm = messagebox.askokcancel("Confirm", "Are you sure you want to remove invalid characters from file and directory names. This can cause unforseen problems.")
