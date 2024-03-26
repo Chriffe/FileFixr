@@ -1,5 +1,7 @@
 # FileFixr
 
+![alt text](https://github.com/Chriffe/FileFixr/blob/main/screenshot.jpg)
+
 This is an application written in Python that helps you santize file and directory names, removing invalid characters. It is useful for example when preparing a large number of files and directories before uploading it to OneDrive or SharePoint.
 
 The application removes trailing and leading spaces and invalid characters by using a list of allowed characters. The reason for this is that there are to many characters to keep track of that can cause problems. For now the application only allows characters commonly used in Europe.
